@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Menu, Typography, Avatar } from "antd";
-import { NavLink } from "react-router-dom";
 import {
 	HomeOutlined,
 	MoneyCollectOutlined,
@@ -17,9 +16,23 @@ const Navbar = () => {
 			<div className="logo-container">
 				<Avatar src={icon} size="large" />
 				<Typography.Title level={2} className="logo">
-					<a>Cryptoverse</a>
+					<a href="/">Cryptoverse</a>
 				</Typography.Title>
 			</div>
+			<Menu theme="dark">
+				<Menu.Item icon={<HomeOutlined />}>
+                    <a href="/">Home</a>
+                </Menu.Item>
+				<Menu.Item icon={<FundOutlined />}>
+                    <a href="/">Cryptocurrencies</a>
+                </Menu.Item>
+				<Menu.Item icon={<MoneyCollectOutlined />}>
+                    <a href="/">Exchanges</a>
+                </Menu.Item>
+				<Menu.Item icon={<BulbOutlined />}>
+                    <a href="/">News</a>
+                </Menu.Item>
+			</Menu>
 		</div>
 	);
 };
