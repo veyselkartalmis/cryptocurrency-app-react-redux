@@ -2,7 +2,15 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 
-import { Navbar } from "./components";
+import {
+	Navbar,
+	HomePage,
+	Exchanges,
+	Cryptocurrencies,
+	CryptoDetails,
+	News,
+} from "./components";
+
 import "./App.css";
 
 const App = () => {
@@ -11,7 +19,24 @@ const App = () => {
 			<div className="navbar">
 				<Navbar />
 			</div>
-			<div className="main"></div>
+			<div className="main">
+				<Layout>
+					<div className="routes">
+						<BrowserRouter>
+							<Routes>
+								<Route exact path="/" element={<HomePage />} />
+								<Route path="/exchanges" element={<Exchanges />} />
+								<Route
+									path="/cryptocurrencies"
+									element={<Cryptocurrencies />}
+								/>
+								<Route path="/crypto/:coindId" element={<CryptoDetails />} />
+								<Route path="/news" element={<News />} />
+							</Routes>
+						</BrowserRouter>
+					</div>
+				</Layout>
+			</div>
 			<div className="footer"></div>
 		</div>
 	);
