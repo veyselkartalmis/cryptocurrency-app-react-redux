@@ -7,6 +7,7 @@ import {
 	FundOutlined,
 	MenuOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 import icon from "../images/cryptocurrency.png";
 
