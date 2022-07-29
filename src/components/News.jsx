@@ -5,8 +5,15 @@ import moment from "moment";
 //API Function
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 
-const News = () => {
-	return <div>News</div>;
+const { Text, Title } = Typography;
+const { Option } = Select;
+
+const News = ({ simplified }) => {
+	const { data: cryptoNews } = useGetCryptoNewsQuery({
+		newsCategory: "Cryptocurrencies",
+		count: simplified ? 10 : 100,
+	});
+	return <></>;
 };
 
 export default News;
