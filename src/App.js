@@ -53,11 +53,3 @@ const App = () => {
 };
 
 export default App;
-
-{
-	/* <BrowserRouter>
-			<Routes>
-				<Route exact path="/"></Route>
-			</Routes>
-		</BrowserRouter> */
-}
