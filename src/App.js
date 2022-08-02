@@ -41,10 +41,10 @@ const App = () => {
 						Cryptoverse <br />
 						All rights reserved
 					</Typography.Title>
-					<a href="/exchanges">Exchanges</a>
+						<a href="/exchanges">Exchanges</a>
 					<Space>
 						<a href="/">Homepage</a>
-							<a href="/news">News</a>
+						<a href="/news">News</a>
 					</Space>
 				</div>
 			</div>
