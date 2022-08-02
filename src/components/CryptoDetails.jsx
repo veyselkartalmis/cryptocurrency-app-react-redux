@@ -64,8 +64,15 @@ const CryptoDetails = () => {
         </Select>
 
         {/* Line Chart */}
-
-        
+        <Col className="stats-container"> 
+          <Col className="coin-value-statictics">
+            <Col className="coin-value=statistics-heading">
+              <Title level={3} className="coin-details-heading">
+                {cryptoDetails.name} Value statatistics
+              </Title>
+            </Col>
+          </Col>
+        </Col>
       </Col>
     </Col>
   );
