@@ -15,6 +15,8 @@ import {
 	ThunderboltOutlined,
 } from "@ant-design/icons";
 
+import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
+
 const { Title, Text } = Typography;
 const { Option } = Select;
 
