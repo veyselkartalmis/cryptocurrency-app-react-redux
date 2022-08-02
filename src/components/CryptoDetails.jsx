@@ -45,7 +45,29 @@ const CryptoDetails = () => {
   ];
 
 	return (
-    <div>{coindId}</div>
+    <Col className="coin-detail-container">
+      <Col className="coin-heading-container">
+        <Title level={2} className="coin-name">
+          {cryptoDetails.name} Price
+        </Title>
+        <p>
+          {cryptoDetails.name} live price in US dollars.
+          View value statistics, market cap and supply.
+        </p>
+        <Select 
+          defaultValue="7d" 
+          className="select-timeperiod"
+          placeholder="Select Time Period"
+          onChange={(value) => setTimePeriod(value)}
+        >
+          {time.map((date) => <Option key={date}>{date}</Option>)}
+        </Select>
+
+        {/* Line Chart */}
+
+        
+      </Col>
+    </Col>
   );
 };
 
