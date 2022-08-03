@@ -99,6 +99,13 @@ const CryptoDetails = () => {
           </Col>
         </Col>
       </Col>
+      <Col className="coin-desc-link">
+        <Row className="coin-desc">
+          <Title level={3} className="coin-details-heading">
+
+          </Title>
+        </Row>
+      </Col>
     </Col>
   );
 };
