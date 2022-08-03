@@ -46,10 +46,10 @@ const CryptoDetails = () => {
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
-          {/* {cryptoDetails.name} */} Price
+          {cryptoDetails?.name} Price
         </Title>
         <p>
-          {/* {cryptoDetails.name}  */}live price in US dollars.
+          {cryptoDetails?.name} live price in US dollars.
           View value statistics, market cap and supply.
         </p>
         <Select 
@@ -64,11 +64,11 @@ const CryptoDetails = () => {
         {/* Line Chart */}
         <Col className="stats-container"> 
           <Col className="coin-value-statistics">
-            <Col className="coin-value=statistics-heading">
+            <Col className="coin-value-statistics-heading">
               <Title level={3} className="coin-details-heading">
-                {/* {cryptoDetails.name} */} Value Statatistics
+                {cryptoDetails?.name} Value Statatistics
               </Title>
-              <p>An overview showing the stats of {/* {cryptoDetails.name} */}</p>
+              <p>An overview showing the stats of {cryptoDetails?.name}</p>
             </Col>
             {stats.map(({icon, title, value}) => (
               <Col className="coin-stats">
@@ -81,11 +81,11 @@ const CryptoDetails = () => {
             ))}
           </Col>
           <Col className="other-stats-info">
-            <Col className="coin-value=statistics-heading">
+            <Col className="coin-value-statistics-heading">
               <Title level={3} className="coin-details-heading">
-                {/* {cryptoDetails.name} */} Value Statatistics
+                Other Statatistics
               </Title>
-              <p>An overview showing the stats of {/* {cryptoDetails.name} */}</p>
+              <p>An overview showing the stats of all cryptocurrencies</p>
             </Col>
             {genericStats.map(({icon, title, value}) => (
               <Col className="coin-stats">
