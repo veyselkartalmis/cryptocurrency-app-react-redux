@@ -4,8 +4,14 @@ import { Col, Row, Typography } from "antd";
 
 const { Title } = Typography;
 
-const LineChart = () => {
-	return <div>LineChart</div>;
+const LineChart = ({coinHistory, coinName}) => {
+	return (
+        <>
+        <Row className="chart-header">
+            <Title level={2} className="chart-title"> {coinName} Price Chart </Title>
+        </Row>
+        </> 
+    )
 };
 
 export default LineChart;
