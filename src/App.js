@@ -37,7 +37,7 @@ const App = () => {
 				<div className="footer">
 					<Typography.Title level={5} style={{ color: "white", textAlign: "center" }}>
 						Cryptoverse <br />
-						All rights reserved
+						<a href="https://github.com/veyselkartalmis" target="_blank">@veyselkartalmis</a>
 					</Typography.Title>
 					<Space>
 						<a href="/">Homepage</a>
