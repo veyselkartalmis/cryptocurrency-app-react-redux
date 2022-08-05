@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 
 import {
 	Navbar,
 	HomePage,
-	Exchanges,
 	Cryptocurrencies,
 	CryptoDetails,
 	News,
@@ -25,7 +24,6 @@ const App = () => {
 						<BrowserRouter>
 							<Routes>
 								<Route exact path="/" element={<HomePage />} />
-								<Route path="/exchanges" element={<Exchanges />} />
 								<Route
 									path="/cryptocurrencies"
 									element={<Cryptocurrencies />}
@@ -41,7 +39,6 @@ const App = () => {
 						Cryptoverse <br />
 						All rights reserved
 					</Typography.Title>
-						<a href="/exchanges">Exchanges</a>
 					<Space>
 						<a href="/">Homepage</a>
 						<a href="/news">News</a>
